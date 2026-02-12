@@ -74,7 +74,7 @@ User source rules:
 ## Prometheus Metrics
 
 - `secgit_force_push_total{path,repo,user}` (counter)
-- `secgit_commits_count{path,repo,user}` (gauge)
+- `secgit_commits{path,repo,user}` (gauge)
 - `secgit_commits_additions{path,repo,user}` (gauge)
 - `secgit_commits_deletions{path,repo,user}` (gauge)
 
