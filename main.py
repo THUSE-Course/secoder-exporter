@@ -9,7 +9,7 @@ from metrics import render_metrics
 from receiver import ReceiverService, parse_push_event
 
 
-app = FastAPI(title="secgit-receiver", version="0.1.0")
+app = FastAPI(title="secgit-receiver", version="0.1.1")
 
 settings: Settings = load_settings()
 database = Database(settings.postgres_dsn)

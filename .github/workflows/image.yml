@@ -8,8 +8,10 @@ jobs:
     permissions:
       contents: read
       packages: write
-    uses: THUSE-Course/github-actions/.github/workflows/docker.yml@master
+    uses: THUSE-Course/github-actions/.github/workflows/docker.yml@a730a24b3fd98b9a53ec71e07f63a81feb457ddd
     with:
       name: ${{ github.event.repository.name }}
       label: ${{ github.ref_name }}
+      refresh: true
+      rotate: false
       owner: ${{ github.repository_owner }}
